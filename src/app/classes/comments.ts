@@ -1,9 +1,12 @@
 import { observable} from 'rxjs';
-import {} from '../services/post.service'
 export interface Comments
 {
    base: string;
    date: string;
+   motd: {
+    msg: string;
+    url: string;
+   };
    rates: {};
    suscess: boolean;
 }

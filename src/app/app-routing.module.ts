@@ -4,11 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { GraphComponent } from './graph/graph.component';
+import { ExchangeComponent} from './exchange/exchange.component'
 
 
 
 const routes: Routes = [
-  {path: '', component: AppComponent},
+  {path: '', component: ExchangeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'graph', component: GraphComponent},
 

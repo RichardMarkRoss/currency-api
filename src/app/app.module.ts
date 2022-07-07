@@ -4,11 +4,13 @@ import { HttpClientModule } from  '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExchangeComponent } from './exchange/exchange.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     routingComponents,
+      ExchangeComponent
    ],
   imports: [
     BrowserModule,
@@ -19,4 +21,4 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
