@@ -1,8 +1,12 @@
 <h1 class=""></h1>
 <div class="form">
-    <form id="exchange_form">
+    <form id="exchange_form" #form="ngForm" (ngSubmit)="submit(form)">
         <label for="base_currency">Convert from: ZAR</label>
+        <select id="base_currency" form="exchange_form" *ngFor="let posts of comments">
+          <option>{{posts.rates}}</option>
+        </select>
 
+        <br>
         <label for="target_currency">Convert to:</label>
         <select id="target_currency" form="exchange_form" name="targetCurrency">
       <option value="GBP">GBP</option>
@@ -23,7 +27,7 @@
 <div>
     <ul>
         <li *ngFor="let posts of comments">
-            {{posts}}
+            {{posts.rates}}
         </li>
     </ul>
 </div>

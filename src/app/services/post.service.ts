@@ -12,7 +12,6 @@ export class PostService{
   constructor(private httpClient: HttpClient) { }
 
   getPosts(): Observable<Comments[]>{
-    console.warn(this.httpClient.get<Comments[]>(this.url));
     return this.httpClient.get<Comments[]>(this.url);
   }
 }
