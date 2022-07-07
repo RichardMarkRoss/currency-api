@@ -1,0 +1,29 @@
+<h1 class=""></h1>
+<div class="form">
+    <form id="exchange_form">
+        <label for="base_currency">Convert from: ZAR</label>
+
+        <label for="target_currency">Convert to:</label>
+        <select id="target_currency" form="exchange_form" name="targetCurrency">
+      <option value="GBP">GBP</option>
+      <option value="EUR">EUR</option>
+      <option value="USD">USD</option>
+      <option value="HKD">HKD</option>
+      <option value="KES">KES</option>
+      <!-- (USD, EUR,  GBP, HKD & KES) -->
+  </select>
+
+        <!--(ngSubmit)="onSubmit()"-->
+        <label for="amount">Amount to convert:</label>
+        <input type="number" id="amount" name="amountToConvert">
+        <input type="submit">
+    </form>
+</div>
+
+<div>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let post of posts">
+            {{post.base}}-{{post.date}}-{{post.rates}}
+        </li>
+    </ul>
+</div>
