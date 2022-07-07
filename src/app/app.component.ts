@@ -3,7 +3,7 @@ import { FormGroup, FormControl, FormArray, NgForm } from '@angular/forms';
 import { Component, AfterViewInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Comments } from './classes/comments';
+import { Rates } from './classes/comments';
 
 @Component({
   selector: 'app-root',
