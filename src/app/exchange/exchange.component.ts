@@ -12,11 +12,11 @@ import { Rates, Comments } from '../classes/comments';
   styleUrls: ['./exchange.component.css']
 })
 export class ExchangeComponent implements OnInit {
-  public comments: Comment[] ;
-  public arr: Rates[];
+  comments: Comment[];
+  rates: Rates[];
   constructor(private services: PostService) {
     this.comments = [];
-    this.arr = [];
+    this.rates = [];
   }
   submit(form: NgForm) {
     console.warn(form.value);
@@ -25,8 +25,7 @@ export class ExchangeComponent implements OnInit {
   ngOnInit() {
     this.services.getPosts()
     .subscribe(response => {
-     this.arr = response;
-      console.log(response);
+      this.rates = response;
     }
     );
   }

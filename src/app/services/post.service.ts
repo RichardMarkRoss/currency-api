@@ -6,8 +6,10 @@ import { Rates, Comments } from '../classes/comments'
 @Injectable({
   providedIn: 'root'
 })
+
 export class PostService{
   public country = 'ZAR'
+
   private url = 'https://api.exchangerate.host/latest?base='+this.country;
 
   constructor(private httpClient: HttpClient) { }
