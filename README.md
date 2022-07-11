@@ -1,3 +1,9 @@
+To acces the deployment use the link https://exchangerateapidemo.herokuapp.com/
+
+If there is a issue accessing the link please download the repo.
+ - please using the terminal and run the command [node server.js].
+
+
 Application spec:
 
 1. Please create a currency conversion system using the currency API (https://api.exchangerate.host/latest?base=ZAR can be used as an endpoint, you can alternatively use any   other endpoint).
