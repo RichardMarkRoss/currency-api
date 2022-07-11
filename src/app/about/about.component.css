@@ -1,0 +1,28 @@
+h1 {
+    font-size: 3.5rem;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.container {
+    bottom: 0;
+    background: rgb(220, 220, 220, 0.6);
+    backdrop-filter: blur(8px);
+    color: #000;
+    width: 100%;
+    height: 175px;
+    padding: 2%;
+}
